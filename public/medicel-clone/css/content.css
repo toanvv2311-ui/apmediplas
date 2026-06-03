@@ -1,0 +1,242 @@
+.content-page {
+  background: #ebebeb url("../images/wave.svg") center / 20% auto no-repeat;
+  overflow-x: hidden;
+}
+
+.content-page .page-shell {
+  background: #ebebeb;
+  border: 10px solid var(--white);
+  overflow: visible;
+}
+
+.content-page .language-switcher {
+  display: none;
+}
+
+.content-hero {
+  display: flex;
+  margin-top: 19rem;
+  position: relative;
+}
+
+.content-hero-slide {
+  display: block;
+  flex: 1 1 50%;
+  min-width: 0;
+}
+
+.content-hero img {
+  display: block;
+  height: clamp(17rem, 25.8vw, 49rem);
+  margin: 0;
+  max-width: none;
+  object-fit: cover;
+  width: 100%;
+}
+
+.content-main {
+  background: #ebebeb;
+  color: #000;
+  display: grid;
+  grid-template-columns: 30rem minmax(0, 1fr);
+  margin: 8rem auto 13rem;
+  max-width: 100%;
+  min-height: 100vh;
+  padding: 0 4rem;
+  text-align: center;
+}
+
+.content-sidebar {
+  padding-right: 3rem;
+  text-align: left;
+}
+
+.content-sidebar nav {
+  display: grid;
+  font-size: 1.7rem;
+  gap: 0.8rem;
+  line-height: 1.35;
+  position: sticky;
+  top: 17.5rem;
+}
+
+.content-sidebar a,
+.content-sidebar span {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.content-sidebar .is-active {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.content-copy {
+  margin: 0 auto;
+  max-width: 86rem;
+  padding: 0 2rem;
+}
+
+.content-section {
+  margin: 0 auto 8rem;
+}
+
+.content-section:not(:last-child)::after {
+  background: var(--blue);
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 1.8rem;
+  margin: 8rem auto 0;
+  width: 1.8rem;
+}
+
+.content-copy h1 {
+  color: #000;
+  font-family: "Lusitana", Georgia, serif;
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 10rem;
+}
+
+.content-copy h3 {
+  color: #000;
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-size: 3.2rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 6.4rem;
+}
+
+.content-copy p {
+  font-size: 1.7rem;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+.content-wide-image {
+  margin: 7.2rem calc((86rem - 120rem) / 2) 0;
+}
+
+.content-wide-image img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 120rem;
+  width: 100%;
+}
+
+.content-button {
+  background: var(--blue);
+  border: 1px solid var(--blue);
+  color: var(--white);
+  display: inline-block;
+  font-size: 1.7rem;
+  line-height: 1;
+  margin-top: 4rem;
+  padding: 0.9rem 4rem;
+  transition:
+    background 0.4s linear,
+    color 0.4s linear;
+}
+
+.content-button:hover {
+  background: var(--white);
+  color: var(--blue);
+}
+
+@media (max-width: 1300px) {
+  .content-hero {
+    margin-top: 15rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .content-hero {
+    margin-top: 10rem;
+  }
+
+  .content-main {
+    display: block;
+    margin-top: 5rem;
+    padding: 0 2rem;
+  }
+
+  .content-sidebar {
+    margin-bottom: 6rem;
+    padding: 0;
+    text-align: center;
+  }
+
+  .content-sidebar nav {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    justify-content: center;
+    position: static;
+  }
+
+  .content-copy h1 {
+    font-size: 4.2rem;
+  }
+
+  .content-wide-image {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .content-hero {
+    margin-top: 10rem;
+  }
+
+  .content-hero img {
+    aspect-ratio: 1200 / 490;
+    min-height: 17rem;
+  }
+
+  .content-main {
+    margin-bottom: 0;
+    padding: 0 1rem;
+  }
+
+  .content-sidebar nav {
+    display: grid;
+    gap: 0.8rem;
+    justify-items: center;
+  }
+
+  .content-copy {
+    max-width: 34rem;
+    padding: 0 1rem;
+  }
+
+  .content-section {
+    margin-bottom: 6rem;
+  }
+
+  .content-section:not(:last-child)::after {
+    margin-top: 6rem;
+  }
+
+  .content-copy h1 {
+    font-size: 3.2rem;
+    margin-bottom: 5rem;
+    text-wrap: balance;
+  }
+
+  .content-copy h3 {
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+  }
+
+  .content-copy p {
+    overflow-wrap: anywhere;
+  }
+
+  .content-wide-image {
+    margin-top: 4rem;
+  }
+}

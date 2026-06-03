@@ -127,7 +127,8 @@ button {
 }
 
 .brand,
-.menu-button {
+.menu-button,
+.language-switcher {
   pointer-events: auto;
 }
 
@@ -144,6 +145,11 @@ button {
   height: 7rem;
   /* width: 10rem; */
 }
+
+.site-header.is-small .language-switcher {
+  top: 4.2rem;
+}
+
 .header-shape {
   height: 32rem;
   opacity: 0.58;
@@ -185,7 +191,9 @@ button {
   text-transform: uppercase;
   z-index: 2;
 }
-
+.site-header.is-small .menu-button {
+  margin-top: 2.4rem;
+}
 .menu-button span {
   letter-spacing: 0;
   color: #000;
@@ -219,6 +227,42 @@ button {
 
 .menu-button i::after {
   top: 1rem;
+}
+
+.language-switcher {
+  align-items: center;
+  display: flex;
+  gap: 1.2rem;
+  position: absolute;
+  right: 17.2rem;
+  top: 8.2rem;
+  z-index: 3;
+}
+
+.language-flag {
+  border: 1px solid rgba(0, 112, 184, 0.24);
+  border-radius: 0.3rem;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.16);
+  display: block;
+  height: 2.2rem;
+  overflow: hidden;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+  width: 3.2rem;
+}
+
+.language-flag:hover,
+.language-flag:focus-visible,
+.language-flag.is-active {
+  border-color: var(--blue);
+  transform: translateY(-0.1rem);
+}
+
+.language-flag svg {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 .home-stage {
@@ -392,7 +436,7 @@ button {
 
 .site-footer {
   align-items: center;
-  background: var(--footer-bg);
+  background: #fff;
   bottom: 0;
   display: flex;
   gap: 2.6rem;
@@ -853,11 +897,11 @@ body.search-open .site-footer {
     position: fixed;
   }
 
-  .site-header .brand img,
+  /* .site-header .brand img,
   .site-header.is-small .brand img {
     height: 7.6rem;
     width: auto;
-  }
+  } */
 
   .site-header.is-small {
     padding: 1.8rem 2rem 1rem;
@@ -1187,6 +1231,16 @@ body.search-open .site-footer {
   .site-header .brand img {
     height: 7rem;
     width: auto;
+  }
+
+  .language-switcher {
+    right: 10.5rem;
+    top: 4rem;
+  }
+
+  .language-flag {
+    height: 1.9rem;
+    width: 2.8rem;
   }
 
   .menu-button {

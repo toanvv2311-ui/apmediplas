@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home - Medicel Clone</title>
+    <title>Product list - Medicel Clone</title>
     <link rel="stylesheet" href="vendor/slick.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/product.css" />
   </head>
-  <body>
+  <body class="product-list-page">
     <div class="page-shell">
       <header class="site-header" id="siteHeader">
-        <a class="brand" href="#" aria-label="Medicel home">
+        <a class="brand" href="index.html" aria-label="Medicel home">
           <img src="images/logo.png" alt="Medicel" />
         </a>
         <div class="header-shape" aria-hidden="true">
@@ -92,115 +93,164 @@
         <span class="mobile-hamburger-visual" aria-hidden="true"></span>
       </header>
 
-      <main class="home-stage">
-        <div
-          class="background-slider home-background-slider"
-          id="backgroundSlider"
-          aria-hidden="true"
-        >
-          <div
-            class="slide is-active"
-            style="background-image: url(&quot;images/slide-1.jpg&quot;)"
-          ></div>
-          <div
-            class="slide"
-            style="background-image: url(&quot;images/slide-6.jpg&quot;)"
-          ></div>
-          <div
-            class="slide"
-            style="background-image: url(&quot;images/slide-3.jpg&quot;)"
-          ></div>
-          <div
-            class="slide"
-            style="background-image: url(&quot;images/slide-4.jpg&quot;)"
-          ></div>
-          <div
-            class="slide"
-            style="background-image: url(&quot;images/slide-5.jpg&quot;)"
-          ></div>
-        </div>
+      <main class="product-page">
+        <nav class="product-breadcrumb" aria-label="Breadcrumb">
+          <a href="#">Products</a>
+        </nav>
 
-        <ul class="home-nav" id="homeNav">
-          <li class="tile tile-injection">
-            <h2>Injection Systems</h2>
-            <div class="hover-content">
-              <div class="inner-wrapper">
-                <h3><a href="#">IOL Injectors</a></h3>
-                <nav>
-                  <a href="#">Preloaded Systems</a>
-                  <a href="#">ACCUJECT Injectors</a>
-                  <a href="#">ERGOJECT Injectors</a>
-                  <a href="#">VISCOJECT-BIO Injector Sets</a>
-                  <a href="#">VISCOJECT easy Injector Sets</a>
-                  <a href="#">VISCOJECT eco Injector Sets</a>
-                </nav>
-                <a class="button-link" href="#">Product filter</a>
-              </div>
+        <div class="product-layout">
+          <aside class="product-sidebar" aria-label="Product navigation">
+            <section class="product-nav-group">
+              <h2>IOL Injectors</h2>
+              <a class="skip-link" href="#productList">Skip navigation</a>
+              <ul>
+                <li><a href="#">Preloaded Systems</a></li>
+                <li><a href="#">ACCUJECT Injectors</a></li>
+                <li><a href="#">ERGOJECT Injectors</a></li>
+                <li><a href="#">VISCOJECT-BIO Injector Sets</a></li>
+                <li><a href="#">VISCOJECT easy Injector Sets</a></li>
+                <li><a href="#">VISCOJECT eco Injector Sets</a></li>
+              </ul>
+              <a class="product-filter-button" href="#">Product filter</a>
+            </section>
+
+            <section class="product-nav-group is-active">
+              <h2>Ophthalmic Surgical Instruments</h2>
+              <a class="skip-link" href="#productList">Skip navigation</a>
+              <ul>
+                <li><a class="is-selected" href="#">I/A Instruments</a></li>
+                <li><a href="#">Phaco Accessories</a></li>
+              </ul>
+            </section>
+
+            <section class="product-nav-group">
+              <h2>Competences</h2>
+              <a class="skip-link" href="#productList">Skip navigation</a>
+              <ul>
+                <li><a href="#">For Users</a></li>
+                <li><a href="#">For Manufacturers</a></li>
+                <li><a href="#">For Sales Partners</a></li>
+              </ul>
+            </section>
+
+            <section class="product-nav-group">
+              <h2>Company</h2>
+              <a class="skip-link" href="#productList">Skip navigation</a>
+              <ul>
+                <li><a href="#">News</a></li>
+                <li><a href="#">About Medicel</a></li>
+                <li><a href="#">Research &amp; Development</a></li>
+                <li><a href="#">Production</a></li>
+                <li><a href="#">Quality</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Exhibitions</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+              </ul>
+            </section>
+          </aside>
+
+          <section class="product-content" id="productList">
+            <div class="product-search-strip" aria-hidden="true">
+              <span></span>
+              <p>Mandatory field Enter a search term*</p>
             </div>
-          </li>
-          <li class="tile tile-instruments">
-            <h2>Ophthalmic Surgical Instruments</h2>
-            <div class="hover-content">
-              <div class="inner-wrapper">
-                <h3><a href="#">Ophthalmic Surgical Instruments</a></h3>
-                <nav>
-                  <a href="#">I/A Instruments</a>
-                  <a href="#">Phaco Accessories</a>
-                </nav>
-                <a class="button-link" href="#">Product filter</a>
-              </div>
+
+            <h1>Product list to SWISS Bimanual I/A</h1>
+            <a class="back-overview" href="#">Back to the overview</a>
+
+            <div class="product-status">
+              <strong>5 Products are being displayed</strong>
             </div>
-          </li>
-          <li class="tile">
-            <h2>Company</h2>
-            <div class="hover-content">
-              <div class="inner-wrapper">
-                <h3><a href="#">Company</a></h3>
-                <nav>
-                  <a href="#">News</a>
-                  <a href="#">About Medicel</a>
-                  <a href="#">Research &amp; Development</a>
-                  <a href="#">Production</a>
-                  <a href="#">Quality</a>
-                  <a href="#">Jobs</a>
-                  <a href="#">Exhibitions</a>
-                  <a href="#">Contact</a>
-                  <a href="#">Terms and Conditions</a>
-                </nav>
-                <a class="button-link" href="#">Distribution</a>
-              </div>
+
+            <div class="product-grid">
+              <article class="product-card">
+                <div class="product-copy">
+                  <h2>Ergonomic -&nbsp;SWISS Bimanual I/A</h2>
+                  <p>single-use, Incision Size 1.1 mm*, 21G / 0.8mm</p>
+                </div>
+                <dl class="product-number">
+                  <dt>ArticleNr.</dt>
+                  <dd>SBS310A</dd>
+                </dl>
+                <div class="product-visual" aria-label="Product image">
+                  <img src="images/SBS_galerie-71d00550.jpg" alt="" />
+                </div>
+                <a class="details-link" href="#">Details</a>
+              </article>
+
+              <article class="product-card">
+                <div class="product-copy">
+                  <h2>Ergonomic -&nbsp;SWISS Bimanual I/A</h2>
+                  <p>single-use, Incision Size 0.8 mm*, 23G / 0.65mm</p>
+                </div>
+                <dl class="product-number">
+                  <dt>ArticleNr.</dt>
+                  <dd>SBS320A</dd>
+                </dl>
+                <div class="product-visual" aria-label="Product image">
+                  <img src="images/SBS_23_galerie-b5c6e191.jpg" alt="" />
+                </div>
+                <a class="details-link" href="#">Details</a>
+              </article>
+
+              <article class="product-card">
+                <div class="product-copy">
+                  <h2>Classic -&nbsp;SWISS Bimanual I/A</h2>
+                  <p>single-use, Incision Size 1.1 mm*, 21G / 0.8mm</p>
+                </div>
+                <dl class="product-number">
+                  <dt>ArticleNr.</dt>
+                  <dd>SBS110A</dd>
+                </dl>
+                <div class="product-visual" aria-label="Product image">
+                  <img src="images/Classic_galerie-5a34e20c.jpg" alt="" />
+                </div>
+                <a class="details-link" href="#">Details</a>
+              </article>
+
+              <article class="product-card">
+                <div class="product-copy">
+                  <h2>Classic&nbsp;- SWISS Bimanual I/A</h2>
+                  <p>single-use, Incision Size 0.8 mm*, 23G / 0.65mm</p>
+                </div>
+                <dl class="product-number">
+                  <dt>ArticleNr.</dt>
+                  <dd>SBS123A</dd>
+                </dl>
+                <div class="product-visual" aria-label="Product image">
+                  <img src="images/Classic_galerie-5a34e20c.jpg" alt="" />
+                </div>
+                <a class="details-link" href="#">Details</a>
+              </article>
+
+              <article class="product-card">
+                <div class="product-copy">
+                  <h2>Classic -&nbsp;SWISS Bimanual I/A, front-port irrigation</h2>
+                  <p>single-use, Incision Size 1.1 mm*, 21G / 0.8mm</p>
+                </div>
+                <dl class="product-number">
+                  <dt>ArticleNr.</dt>
+                  <dd>SBS105</dd>
+                </dl>
+                <div class="product-visual" aria-label="Product image">
+                  <img src="images/Classic_galerie-5a34e20c.jpg" alt="" />
+                </div>
+                <a class="details-link" href="#">Details</a>
+              </article>
             </div>
-          </li>
-          <li class="tile">
-            <h2>Competence</h2>
-            <div class="hover-content">
-              <div class="inner-wrapper">
-                <h3><a href="#">Competences</a></h3>
-                <nav>
-                  <a href="#">For Users</a>
-                  <a href="#">For Manufacturers</a>
-                  <a href="#">For Sales Partners</a>
-                </nav>
-              </div>
-            </div>
-          </li>
-          <li class="tile">
-            <h2>Research &amp; Development</h2>
-            <div class="hover-content">
-              <div class="inner-wrapper">
-                <h3><a href="#">Research &amp; Development</a></h3>
-              </div>
-            </div>
-          </li>
-          <li class="tile">
-            <h2>Production</h2>
-            <div class="hover-content">
-              <div class="inner-wrapper">
-                <h3><a href="#">Production</a></h3>
-              </div>
-            </div>
-          </li>
-        </ul>
+
+            <p class="no-results">
+              Sorry, there is no product with this criteria. Please adjust your
+              filter options above
+            </p>
+            <p class="product-note">
+              * Incision sizes are indications only based on average
+              experiences. The individually required incision sizes may vary
+              depending on surgical techniques
+            </p>
+          </section>
+        </div>
       </main>
 
       <footer class="site-footer">
@@ -229,7 +279,7 @@
       <div class="mobile-menu-panels">
         <section class="mobile-menu-panel is-active" data-mobile-panel="main">
           <div class="mobile-menu-heading">Menu</div>
-          <a class="mobile-menu-link" href="#">Home</a>
+          <a class="mobile-menu-link" href="index.html">Home</a>
           <a class="mobile-menu-link has-submenu" href="#">
             <span>Products</span><i data-mobile-target="products">&gt;</i>
           </a>
@@ -245,11 +295,7 @@
         </section>
         <section class="mobile-menu-panel" data-mobile-panel="products">
           <div class="mobile-menu-heading with-back">
-            <button
-              type="button"
-              data-mobile-target="main"
-              aria-label="Back"
-            ></button>
+            <button type="button" data-mobile-target="main" aria-label="Back"></button>
             <span>Products</span>
           </div>
           <a class="mobile-menu-link has-submenu" href="#">
@@ -262,11 +308,7 @@
         </section>
         <section class="mobile-menu-panel" data-mobile-panel="lens">
           <div class="mobile-menu-heading with-back">
-            <button
-              type="button"
-              data-mobile-target="products"
-              aria-label="Back"
-            ></button>
+            <button type="button" data-mobile-target="products" aria-label="Back"></button>
             <span>Lens Injection Systems</span>
           </div>
           <a class="mobile-menu-link" href="#">Preloaded Systems</a>
@@ -279,11 +321,7 @@
         </section>
         <section class="mobile-menu-panel" data-mobile-panel="instruments">
           <div class="mobile-menu-heading with-back">
-            <button
-              type="button"
-              data-mobile-target="products"
-              aria-label="Back"
-            ></button>
+            <button type="button" data-mobile-target="products" aria-label="Back"></button>
             <span>Ophthalmic Surgical Instruments</span>
           </div>
           <a class="mobile-menu-link" href="#">I/A Instruments</a>
@@ -292,11 +330,7 @@
         </section>
         <section class="mobile-menu-panel" data-mobile-panel="competences">
           <div class="mobile-menu-heading with-back">
-            <button
-              type="button"
-              data-mobile-target="main"
-              aria-label="Back"
-            ></button>
+            <button type="button" data-mobile-target="main" aria-label="Back"></button>
             <span>Competences</span>
           </div>
           <a class="mobile-menu-link" href="#">For Users</a>
@@ -305,11 +339,7 @@
         </section>
         <section class="mobile-menu-panel" data-mobile-panel="company">
           <div class="mobile-menu-heading with-back">
-            <button
-              type="button"
-              data-mobile-target="main"
-              aria-label="Back"
-            ></button>
+            <button type="button" data-mobile-target="main" aria-label="Back"></button>
             <span>Company</span>
           </div>
           <a class="mobile-menu-link" href="#">News</a>

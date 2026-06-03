@@ -1,0 +1,372 @@
+.product-list-page {
+  background: #ebebeb url("../images/wave.svg") center / 20% auto no-repeat;
+  overflow-x: hidden;
+}
+
+.product-list-page .page-shell {
+  background: #ebebeb;
+  border: 10px solid var(--white);
+  overflow: visible;
+}
+
+.product-page {
+  background: #ebebeb;
+  color: #000;
+  min-height: 100vh;
+  padding: 24rem 4rem 14rem;
+  position: relative;
+  text-align: left;
+}
+
+.product-breadcrumb {
+  display: none;
+  color: #7f8f97;
+  font-size: 1.4rem;
+  margin: 0 auto 4.2rem;
+  max-width: 123rem;
+  text-transform: uppercase;
+}
+
+.product-breadcrumb a {
+  color: var(--blue);
+}
+
+.product-layout {
+  display: block;
+  margin: 0 auto;
+  max-width: 120rem;
+  padding: 0 2rem;
+}
+
+.product-sidebar {
+  display: none;
+  color: #4b4b4b;
+  font-size: 1.5rem;
+  line-height: 1.35;
+  padding-top: 0.8rem;
+}
+
+.product-nav-group {
+  margin-bottom: 4.4rem;
+}
+
+.product-nav-group h2 {
+  color: var(--blue);
+  font-family: "Lusitana", Georgia, serif;
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 1.12;
+  margin: 0 0 1rem;
+}
+
+.product-nav-group ul {
+  list-style: none;
+  margin: 1.2rem 0 0;
+  padding: 0;
+}
+
+.product-nav-group li {
+  margin-bottom: 0.55rem;
+}
+
+.product-nav-group a {
+  color: #585858;
+}
+
+.product-nav-group a:hover,
+.product-nav-group a.is-selected {
+  color: var(--blue);
+}
+
+.skip-link {
+  color: #9a9a9a !important;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-filter-button {
+  background: var(--blue);
+  color: var(--white) !important;
+  display: inline-block;
+  font-size: 1.4rem;
+  margin-top: 1.8rem;
+  padding: 0.8rem 2rem;
+}
+
+.product-content {
+  max-width: none;
+  text-align: center;
+}
+
+.product-search-strip {
+  align-items: center;
+  color: #9b9b9b;
+  display: none;
+  font-size: 1.3rem;
+  gap: 1.4rem;
+  justify-content: flex-end;
+  margin-bottom: 2.8rem;
+}
+
+.product-search-strip span {
+  background: url("../images/search.svg") center / 2.4rem auto no-repeat;
+  border-bottom: 1px solid #d9d9d9;
+  display: block;
+  height: 3.4rem;
+  width: 20rem;
+}
+
+.product-search-strip p {
+  margin: 0;
+}
+
+.product-content h1 {
+  color: #000;
+  font-family: "Lusitana", Georgia, serif;
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 1.16;
+  margin: 0 0 3rem;
+  overflow-wrap: normal;
+  text-align: center;
+}
+
+.back-overview {
+  background: var(--blue);
+  border: 1px solid var(--blue);
+  color: var(--white);
+  display: inline-block;
+  font-size: 1.7rem;
+  line-height: 1;
+  margin: 0 0 0.6rem;
+  padding: 0.9rem 4rem;
+  transition:
+    background 0.4s linear,
+    color 0.4s linear;
+}
+
+.back-overview:hover {
+  background: var(--white);
+  color: var(--blue);
+}
+
+.product-status {
+  color: #777;
+  display: block;
+  font-size: 1.7rem;
+  font-style: italic;
+  line-height: 1.4;
+  margin-bottom: 3.4rem;
+  text-align: center;
+}
+
+.product-status strong {
+  color: #777;
+  font-weight: 300;
+}
+
+.product-grid {
+  background: var(--white);
+  display: block;
+  padding: 2rem 2rem 0;
+  text-align: left;
+}
+
+.product-card {
+  border-top: 1px solid #8c8c8c;
+  display: grid;
+  grid-template-columns: minmax(28rem, 1fr) 15rem 25rem auto;
+  align-items: center;
+  column-gap: 2.2rem;
+  min-height: 0;
+  padding: 2.5rem 0;
+}
+
+.product-copy h2 {
+  color: #000;
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.product-copy p {
+  color: #000;
+  font-size: 1.7rem;
+  line-height: 1.6;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.product-number {
+  color: #000;
+  font-size: 1.7rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.product-number dt {
+  color: #000;
+  font-weight: 300;
+}
+
+.product-number dd {
+  font-weight: 300;
+  margin: 0;
+}
+
+.product-visual {
+  display: block;
+  text-align: center;
+}
+
+.product-visual img {
+  display: inline-block;
+  height: auto;
+  max-width: 22.1rem;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.details-link {
+  border: 1px solid var(--blue);
+  background: var(--blue);
+  color: var(--white);
+  display: inline-block;
+  font-size: 1.7rem;
+  justify-self: end;
+  line-height: 1;
+  padding: 0.9rem 4rem;
+  transition:
+    background 0.4s linear,
+    color 0.4s linear;
+}
+
+.details-link:hover {
+  background: var(--white);
+  color: var(--blue);
+}
+
+.no-results {
+  color: #7d7d7d;
+  display: none;
+  font-size: 1.5rem;
+  margin: 4rem 0 0;
+}
+
+.product-note {
+  color: #000;
+  font-size: 1.7rem;
+  line-height: 1.6;
+  margin: 5rem 0 0;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .product-page {
+    padding: 16rem 2rem 0;
+  }
+
+  .product-breadcrumb {
+    margin-bottom: 2.6rem;
+  }
+
+  .product-content h1 {
+    font-size: 4.4rem;
+  }
+
+  .product-card {
+    grid-template-columns: minmax(20rem, 1fr) 13rem 21rem auto;
+  }
+}
+
+@media (max-width: 780px) {
+  .product-card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 1rem;
+  }
+
+  .product-copy {
+    order: 1;
+  }
+
+  .product-number {
+    order: 3;
+  }
+
+  .product-visual {
+    order: 2;
+  }
+
+  .details-link {
+    justify-self: start;
+    order: 4;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-page {
+    padding: 13rem 1rem 0;
+  }
+
+  .product-content h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 32rem;
+    text-wrap: balance;
+  }
+
+  .back-overview {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .product-layout {
+    padding: 0 1rem;
+  }
+
+  .product-card {
+    grid-template-columns: 1fr;
+    padding: 2.6rem 0;
+    text-align: center;
+  }
+
+  .product-copy {
+    order: 3;
+  }
+
+  .product-copy h2,
+  .product-copy p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 31rem;
+  }
+
+  .product-number {
+    order: 2;
+  }
+
+  .product-visual {
+    order: 1;
+    padding-bottom: 1rem;
+  }
+
+  .details-link {
+    justify-self: center;
+    order: 4;
+  }
+
+  .product-status span,
+  .product-status strong {
+    display: block;
+  }
+
+  .product-status {
+    display: block;
+  }
+}
